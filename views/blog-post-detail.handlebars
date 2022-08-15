@@ -1,0 +1,48 @@
+<div class="row mb-4 blog-post text-center">
+  <div class="col-md-12">
+    <div class="blog-post-top-area">
+        <div>
+            {{name}}
+        </div>
+        <div>
+            Created by {{user.name}} on {{format_date date_created}}
+        </div>
+    </div>
+    <div class="blog-post-bottom-area">{{description}}</div>
+  </div>
+</div>
+
+<!-- Loop over each object in the blog post comments array -->
+{{#each blogPostComments as |blogPostComment| }}
+<div class="row mb-4 blog-post-existing-comment">
+  <div class="col-md-12">
+    <div class="blog-post-existing-comment-top-area">
+
+    </div>
+    <div class="blog-post-existing-comment-bottom-area">
+        <div>
+            {{blogPostComment.comment}}
+        </div>
+        <div class="blog-post-existing-comment-person-and-date">
+            -{{blogPostComment.user.name}}, {{format_date blogPostComment.date_created}}
+        </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+{{!-- Show "add comment" form for logged in users only --}}
+{{#if logged_in}}
+    <div class="row mb-4 blog-post-comment">
+      <div class="col-md-12">
+        <div class="blog-post-comment-top-area">
+        </div>
+        <div class="blog-post-comment-bottom-area">
+            <textarea class="col-md-12" id="blog-post-comment"></textarea>
+        </div>
+        <button class="btn btn-primary col-md-12 submit-comment-button" data-id="{{id}}">Submit</button>
+      </div>
+    </div>
+{{/if}}
+
+<script src="../js/blogPostAddComment.js"></script>

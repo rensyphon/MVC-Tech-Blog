@@ -1,0 +1,27 @@
+<div class="dashboard">
+    <div class="row">
+      <div class="col-auto">
+        <h2>Welcome, {{name}}!</h2>
+      </div>
+    </div>
+    {{log this}}
+    <div class="row mt-12">
+      {{#if blog_posts.length}}
+      <div class="col-md-12 blog-post-list">
+        <h3>Current Blog Posts1:</h3>
+
+        {{#each blog_posts as |blogPost|}}
+        <div class="row mb-2">
+          <div class="col-md-12">
+            <h4><a href="/blog-post-edit-delete/{{blogPost.id}}">{{blogPost.name}}</a></h4>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+    </div>
+
+    <a href="/create-blog-post">
+        <button>Create New Blog Post</button>
+    </a>
+</div>

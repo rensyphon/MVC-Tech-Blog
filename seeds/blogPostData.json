@@ -1,0 +1,15 @@
+[
+    {
+      "name": "MySQL",
+      "description": "MySQL is a relational database that is popular and widely used in industry and academia."
+    },
+    {
+      "name": "Node.js",
+      "description": "Node.js is a popular server-side web application development framework that allows developers to write their code in Javascript."
+    },
+    {
+      "name": "Handlebars",
+      "description": "Handlebars is a templating system that can be used to render dynamic HTML templates for different pages of a web application."
+    }
+  ]
+  

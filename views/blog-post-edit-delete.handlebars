@@ -1,0 +1,19 @@
+<div class="text-center">
+  <div>
+    <div>Name:</div>
+    <textarea id="blog-post-name">{{name}}</textarea>
+  </div>
+  <div>
+    <div>Description:</div>
+    <textarea id="blog-post-desc">{{description}}</textarea>
+  </div>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <div>
+    <button class="btn btn-sm btn-danger delete-button" data-id="{{id}}">DELETE</button>
+  </div>
+  <p>
+    <button class="btn btn-primary save-button" data-id="{{id}}">Save</button>
+  </p>
+</div>
+
+<script src="../js/blogPostEditDelete.js"></script>
