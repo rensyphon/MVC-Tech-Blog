@@ -6,7 +6,7 @@ This program creates a tech blog, in which a user can create an account, log in 
 
 ## Installation
 
-Program may be used live on [Heroku](). Alternatively, you may download the [Github repo](https://github.com/rensyphon/MVC-Tech-Blog). After doing so, log into MySQL and run `source schema.sql` in the ./db/ folder to create the database. Then, in the root folder, run `npm seed` to seed the database and `npm start` to begin the program.
+Program may be used live on [Heroku](https://desolate-harbor-23002.herokuapp.com/). Alternatively, you may download the [Github repo](https://github.com/rensyphon/MVC-Tech-Blog). After doing so, log into MySQL and run `source schema.sql` in the ./db/ folder to create the database. Then, in the root folder, run `npm seed` to seed the database and `npm start` to begin the program.
 
 ## Usage
 
